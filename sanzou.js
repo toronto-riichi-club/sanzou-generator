@@ -79,7 +79,9 @@ function download(uri, filename) {
 }
 
 function downloadSVG() {
-  download("data:image/svg+xml;charset=utf-8," + encodeURIComponent(getImage(colors)), "sanzou.svg");
+  download("data:image/svg+xml;charset=utf-8," + encodeURIComponent(
+    '<?xml version="1.0" encoding="UTF-8" standalone="no"?>' + getImage(colors)
+  ), "sanzou.svg");
 }
 
 function downloadPNG() {
