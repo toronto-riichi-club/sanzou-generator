@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanzou Tile Avatar Generator</title>
+  <style>
+    output > svg {
+      width: 256px;
+      height: 256px;
+    }
+    .preview-container {
+      float: left;
+      margin-right: 1em;
+    }
+    label {
+      display: block;
+    }
+  </style>
+  <script src="./sanzou.js"></script>
+</head>
+<body>
+  <h1>Sanzou Tile Avatar Generator</h1>
+  <div class="preview-container">
+    <output id="preview"></output>
+  </div>
+  <div>
+    <form>
+      <label><input id="background-input" type="color" value="#ffb701" oninput="updateImage()"> Background</label>
+      <label><input id="tile-border-input" type="color" value="#000000" oninput="updateImage()"> Tile border</label>
+      <label><input id="tile-background-input" type="color" value="#ffffff" oninput="updateImage()"> Tile background</label>
+      <label><input id="markings-input" type="color" value="#018659" oninput="updateImage()"> Markings</label>
+      <label><input id="size-input" type="number" value="1024" min="1">px Size (PNG only)</label>
+      <button type="button" onclick="downloadSVG()">Download SVG</button><button type="button" onclick="downloadPNG()">Download PNG</button><button type="reset">Reset</button>
+    </form>
+  </div>
+</body>
+</html>
