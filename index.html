@@ -35,7 +35,7 @@
     <output id="preview"></output>
   </div>
   <div>
-    <form>
+    <form onreset="setTimeout(updateImage, 0)">
       <label><input id="background-input" type="color" value="#ffb701" oninput="updateImage()"> Background</label>
       <label><input id="tile-border-input" type="color" value="#000000" oninput="updateImage()"> Tile border</label>
       <label><input id="tile-background-input" type="color" value="#ffffff" oninput="updateImage()"> Tile background</label>
