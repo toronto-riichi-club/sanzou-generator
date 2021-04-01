@@ -4,6 +4,8 @@
 
 A tool for customizing and downloading sanzou tile avatars.
 
+![Sanzou tile preview](./images/sanzou-example-256px.png)
+
 ## License
 
 [MIT](./LICENSE)
